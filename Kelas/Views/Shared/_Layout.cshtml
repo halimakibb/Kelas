@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>@ViewBag.Title</title>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div id="header" class="bg-grey">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="logo">
+                        <img src="~/Content/images/logo.png" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    @RenderSection("menu", required: false)
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn-logout"><img src="~/Content/images/icon-out.png"></a>
+    </div>
+
+
+    @*"Content Goes Here"*@
+    @RenderBody()
+
+
+    <div class="footer footer-other">
+        <div class="inner-footer">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-10">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="footer-left">
+                                <div class="footer-logo">
+                                    <img src="~/Content/images/logo-white.png" alt="logo-white">
+                                </div>
+                                <div class="footer-address">
+                                    <span><b>Klas</b>.co.id</span>
+                                    <address>
+                                        Gedung Antam, Tower 2, lt. 19<br />
+                                        Jl. TB Simatupang, Kav 23 - 25<br />
+                                        Jakarta Selatan
+                                    </address>
+                                </div>
+
+                                <ul class="footer-menu">
+                                    <li><a href="#">Faq</a></li>
+                                    <li><a href="#">Terms & Condition</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="footer-right">
+                                <h4>Call us, We're happy to help</h4>
+                                <div class="footer-phone">
+                                    <div class="phone-icon">
+                                        <span><i class="fa fa-whatsapp"></i></span>
+                                        <span><i class="fa fa-phone"></i></span>
+                                    </div>
+                                    <div class="phone-content">
+                                        <span>+62 12 90 33 5004 </span>
+                                        <span>(10:00 - 17:00 WIB)</span>
+                                    </div>
+                                </div>
+                                <ul class="footer-socmed">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copy">&copy; Klas.co.id All Rights Reserved</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Klas.co.id</title>
+
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+
+</head>
+<body>
+	 <!-- Modal -->
+      <div class="modal fade modal-klas" id="ModalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="box-modal" style="background:url(images/bg-login.jpg) no-repeat center center;background-size: cover;border-radius:10px 0px 0px 10px;">
+                <div class="inner-modal">
+                  <div class="title-modal">Not a user yet?</div>
+                  <div class="btn-modal">
+                    <a href="#" class="btn btn-klas2 btn-block">
+                    	<span class="bg-blue">CREATE ACCOUNT</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="box-modal">
+                <div class="inner-modal">
+                  <div class="form-modal">
+                    <div class="title-form-modal green">LOG IN</div>
+                    <form>
+                      <div class="form-group">
+                        <input type="email" name="email" placeholder="Email" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" name="password" placeholder="Password" class="form-control">
+                      </div>
+                      <br />
+                      <div class="pull-left">
+                        <a href="#" class="forgot">Forgot password?</a>
+                      </div>
+                      <div class="pull-right">
+                        <button name="submit" type="submit" class="btn btn-klas3 bg-green">LOG IN</button>
+                      </div>
+                      <div class="clearfix"></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade modal-klas" id="ModalAnggota" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="box-modal">
+                <div class="inner-modal">
+                  <div class="form-modal">
+                    <div class="title-form-modal blue">SIGN UP</div>
+                    <form>
+                      <div class="form-group">
+                        <input type="email" name="email" placeholder="Email" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" name="password" placeholder="Password" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" name="co_password" placeholder="Confirm Password" class="form-control">
+                      </div>
+                      <p class="terms">By click on create account button, You agree <br />to the <a href="#">Terms & Condition</a></p>
+                      <br />
+                      <div class="pull-right">
+                        <button name="submit" type="submit" class="btn btn-klas3 bg-blue">CREATE ACCOUNT</button>
+                      </div>
+                      <div class="clearfix"></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="box-modal" style="background:url(images/bg-register.jpg) no-repeat center center;background-size: cover;border-radius:0px 10px 10px 0px;">
+                <div class="inner-modal">
+                  <div class="title-modal">Already a user?</div>
+                  <div class="btn-modal">
+                    <a href="#" class="btn btn-klas2 btn-block">
+                    	<span class="bg-green">LOGIN</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+	<div id="header" class="bg-grey">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="logo">
+						<img src="images/logo.png" class="img-responsive">
+					</div>
+				</div>
+				<div class="col-md-10">
+					<ul class="klas-breadcumbs">
+						<li><a href="#">Home</a></li>
+						<li>/</li>
+						<li>Pick The SKill</li>
+					</ul>
+					<ul class="main-menu">
+						<li><a href="#">PAYMENT INFORMATION</a></li>
+						<li><a href="#">ABOUT US</a></li>
+						<!-- <li>ARE YOU MEMBER ? <a href="#" data-toggle="modal" data-target="#ModalAnggota">REGISTER /</a> <a href="#" data-toggle="modal" data-target="#ModalLogin"> LOGIN</a></li> -->
+						<li><a href="#">Hi, Gilang</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell-o"></i> <span class="badge badge-notif">3</span></a>
+
+							<div class="box-notif dropdown-menu" aria-labelledby="dLabel">
+								tes
+							</div>
+						</li>
+						<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+		<a href="#" class="btn-logout"><img src="images/icon-out.png" ></a>
+	</div>
+
+	<div class="main-content">
+		<div class="row no-margin">
+			<div class="col-md-2 no-padding">
+				<div class="side-bar">
+					<div class="top-title">
+						BROWSE LESSONS
+					</div>
+					<div class="input-group search-group">
+					  <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-search"></i></span>
+					  <input type="text" class="form-control" placeholder="PILIH SKILL" aria-describedby="sizing-addon2">
+					</div>
+					<ul class="side-menu">
+						<li><a href="#">Language <i class="fa fa-caret-down"></i></a></li>
+						<li class="parent-menu">
+							<a href="#">Art <i class="fa fa-caret-down"></i></a>
+							<ul class="child">
+								<li><a href="#">Seni Musik</a></li>
+								<li><a href="#">Seni Lukis</a></li>
+								<li><a href="#">Mural</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Lorem Ipsum <i class="fa fa-caret-down"></i></a></li>
+						<li><a href="#">Lorem Ipsum <i class="fa fa-caret-down"></i></a></li>
+					</ul>
+					<div class="book-info-bottom">
+						<div class="top-title bg-dark">
+							Input Your Booked Code Here :
+						</div>
+						<div class="input-group group-code">
+					      <input type="text" class="form-control" placeholder="Your code">
+					      <span class="input-group-btn">
+					        <button class="btn btn-green" type="button">Submit</button>
+					      </span>
+					    </div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 no-padding">
+				<div class="title-bar">
+					<div class="top-title bg-blue-dark">
+						Private
+					</div>	
+				</div>
+			</div>
+			<div class="col-md-8 no-padding">
+				<div class="title-bar">
+					<div class="page-title">
+						What would you like to learn today?
+					</div>	
+					<ul class="list-skill-type">
+						<li><a href="#" ><i class="fa fa-th-large"></i></a></li>
+						<li><a href="#" class="active"><i class="fa fa-th-list"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-10 no-padding box-main-skill">
+				<div class="row">
+					<div class="col-md-6">
+						<a href="#" class="skill-list">
+							<div class="skill-photo">
+								<img src="images/img1.jpg" class="img-responsive">
+							</div>
+							<div class="inner-skill-list">
+								<h4>Salsa Nadila</h4>
+								<ul class="list-profile">
+									<li>
+										<img src="images/icon-study.png" />
+										English
+									</li>
+									<li>
+										<img src="images/icon-location.png" />
+										Jakarta Selatan
+									</li>
+								</ul>
+								<p>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+								</p>
+							</div>
+							<div class="list-verify">
+								<div class="panton-extrabold green-light">Rate</div>
+								<div class="panton-extrabold">IDR 132.455 / Session</div>
+								<fieldset class="rating">
+								    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+								    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+								    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+								    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+								    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+								    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+								    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+								    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+								    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+								    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+								</fieldset>
+								<div class="clearfix"></div>
+								<div class="box-verify">
+									<span>
+										<img src="images/icon-check.png" class="img-responsive" />
+									</span>
+									<div class="inner-verify">
+										VERIFIED
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-6">
+						<a href="#" class="skill-list">
+							<div class="skill-photo">
+								<img src="images/img2.jpg" class="img-responsive">
+							</div>
+							<div class="inner-skill-list">
+								<h4>Rekti Yoewono</h4>
+								<ul class="list-profile">
+									<li>
+										<img src="images/icon-study.png" />
+										English
+									</li>
+									<li>
+										<img src="images/icon-location.png" />
+										Jakarta Selatan
+									</li>
+								</ul>
+								<p>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+								</p>
+							</div>
+							<div class="list-verify">
+								<div class="panton-extrabold green-light">Rate</div>
+								<div class="panton-extrabold">IDR 132.455 / Session</div>
+								<fieldset class="rating">
+								    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+								    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+								    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+								    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+								    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+								    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+								    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+								    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+								    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+								    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+								</fieldset>
+								<div class="clearfix"></div>
+								<div class="box-verify">
+									<span>
+										<img src="images/icon-check.png" class="img-responsive" />
+									</span>
+									<div class="inner-verify">
+										VERIFIED
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<a href="#" class="skill-list">
+							<div class="skill-photo">
+								<img src="images/img1.jpg" class="img-responsive">
+							</div>
+							<div class="inner-skill-list">
+								<h4>Salsa Nadila</h4>
+								<ul class="list-profile">
+									<li>
+										<img src="images/icon-study.png" />
+										English
+									</li>
+									<li>
+										<img src="images/icon-location.png" />
+										Jakarta Selatan
+									</li>
+								</ul>
+								<p>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+								</p>
+							</div>
+							<div class="list-verify">
+								<div class="panton-extrabold green-light">Rate</div>
+								<div class="panton-extrabold">IDR 132.455 / Session</div>
+								<fieldset class="rating">
+								    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+								    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+								    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+								    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+								    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+								    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+								    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+								    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+								    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+								    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+								</fieldset>
+								<div class="clearfix"></div>
+								<div class="box-verify">
+									<span>
+										<img src="images/icon-check.png" class="img-responsive" />
+									</span>
+									<div class="inner-verify">
+										VERIFIED
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-6">
+						<a href="#" class="skill-list">
+							<div class="skill-photo">
+								<img src="images/img2.jpg" class="img-responsive">
+							</div>
+							<div class="inner-skill-list">
+								<h4>Rekti Yoewono</h4>
+								<ul class="list-profile">
+									<li>
+										<img src="images/icon-study.png" />
+										English
+									</li>
+									<li>
+										<img src="images/icon-location.png" />
+										Jakarta Selatan
+									</li>
+								</ul>
+								<p>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+								</p>
+							</div>
+							<div class="list-verify">
+								<div class="panton-extrabold green-light">Rate</div>
+								<div class="panton-extrabold">IDR 132.455 / Session</div>
+								<fieldset class="rating">
+								    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+								    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+								    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+								    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+								    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+								    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+								    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+								    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+								    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+								    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+								</fieldset>
+								<div class="clearfix"></div>
+								<div class="box-verify">
+									<span>
+										<img src="images/icon-check.png" class="img-responsive" />
+									</span>
+									<div class="inner-verify">
+										VERIFIED
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<a href="#" class="skill-list">
+							<div class="skill-photo">
+								<img src="images/img1.jpg" class="img-responsive">
+							</div>
+							<div class="inner-skill-list">
+								<h4>Salsa Nadila</h4>
+								<ul class="list-profile">
+									<li>
+										<img src="images/icon-study.png" />
+										English
+									</li>
+									<li>
+										<img src="images/icon-location.png" />
+										Jakarta Selatan
+									</li>
+								</ul>
+								<p>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+								</p>
+							</div>
+							<div class="list-verify">
+								<div class="panton-extrabold green-light">Rate</div>
+								<div class="panton-extrabold">IDR 132.455 / Session</div>
+								<fieldset class="rating">
+								    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+								    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+								    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+								    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+								    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+								    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+								    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+								    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+								    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+								    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+								</fieldset>
+								<div class="clearfix"></div>
+								<div class="box-verify">
+									<span>
+										<img src="images/icon-check.png" class="img-responsive" />
+									</span>
+									<div class="inner-verify">
+										VERIFIED
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-6">
+						<a href="#" class="skill-list">
+							<div class="skill-photo">
+								<img src="images/img2.jpg" class="img-responsive">
+							</div>
+							<div class="inner-skill-list">
+								<h4>Rekti Yoewono</h4>
+								<ul class="list-profile">
+									<li>
+										<img src="images/icon-study.png" />
+										English
+									</li>
+									<li>
+										<img src="images/icon-location.png" />
+										Jakarta Selatan
+									</li>
+								</ul>
+								<p>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+								</p>
+							</div>
+							<div class="list-verify">
+								<div class="panton-extrabold green-light">Rate</div>
+								<div class="panton-extrabold">IDR 132.455 / Session</div>
+								<fieldset class="rating">
+								    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+								    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+								    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+								    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+								    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+								    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+								    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+								    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+								    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+								    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+								</fieldset>
+								<div class="clearfix"></div>
+								<div class="box-verify">
+									<span>
+										<img src="images/icon-check.png" class="img-responsive" />
+									</span>
+									<div class="inner-verify">
+										VERIFIED
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer-other">
+		<div class="inner-footer">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-10">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="footer-left">
+								<div class="footer-logo">
+									<img src="images/logo-white.png" alt="logo-white">
+								</div>
+								<div class="footer-address">
+									<span><b>Klas</b>.co.id</span>
+									<address>
+										Gedung Antam, Tower 2, lt. 19<br />
+										Jl. TB Simatupang, Kav 23 - 25<br />
+										Jakarta Selatan
+									</address>
+								</div>
+
+								<ul class="footer-menu">
+									<li><a href="#">Faq</a></li>
+									<li><a href="#">Terms & Condition</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="footer-right">
+								<h4>Call us, We're happy to help</h4>
+								<div class="footer-phone">
+									<div class="phone-icon">
+										<span><i class="fa fa-whatsapp"></i></span>
+										<span><i class="fa fa-phone"></i></span>
+									</div>
+									<div class="phone-content">
+										<span>+62 12 90 33 5004 </span>
+										<span>(10:00 - 17:00 WIB)</span>
+									</div>
+								</div>
+								<ul class="footer-socmed">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+									<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="copy">&copy; Klas.co.id All Rights Reserved</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+
+	<script type="text/javascript">
+		function SetHKlas()
+		{
+			var a = $(".abs-klas").height();
+			$(".inner-box-klas").height(a);
+
+		}
+
+		$(document).ready(function(){
+			SetHKlas();
+			$('.dropdown-toggle').dropdown();
+			$(window).resize(function(){
+				SetHKlas();
+			});
+		});
+	</script>
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".side-menu .parent-menu a").click(function(){
+				$(this).parent().find(".child").slideToggle();
+				$(this).toggleClass('active');
+				return false;
+			});
+		});
+	</script>
+</body>
+</html>

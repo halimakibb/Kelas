@@ -1,0 +1,64 @@
+﻿@{
+    List<Kelas.DataAccessLayer.Entities.Skills> menuList = ViewBag.Menu;
+}
+
+    @foreach (var mp in menuList.Where(p => p.SkillParentID == null))
+    {
+
+        <li class="parent-menu">
+            <a href="#">
+                <i class="fa fa-caret-down"></i>
+                <span class="title">@mp.SkillName</span>
+                
+            </a>
+            @if (menuList.Count(p => p.SkillParentID == mp.SkillID) > 0)
+            {
+                @:<ul class="child">
+            }
+
+            @RenderMenuItem(menuList, mp)
+
+            @if (menuList.Count(p => p.SkillParentID == mp.SkillID) > 0)
+            {
+                @:</ul>
+            }
+
+        </li>
+    }
+
+
+@helper RenderMenuItem(List<Kelas.DataAccessLayer.Entities.Skills> menuList, Kelas.DataAccessLayer.Entities.Skills mi)
+{
+    foreach (var cp in menuList.Where(p => p.SkillParentID == mi.SkillID))
+    {
+
+
+            @:<li>
+                <a href="#">
+                   
+                    <span class="title">@cp.SkillName</span> 
+                    @if (menuList.Count(p => p.SkillParentID == cp.SkillID) > 0)
+                    {
+                        @:<i class="fa fa-caret-down"></i>
+                    }
+                    <span class="arrow"></span>
+                </a>
+
+        if (menuList.Count(p => p.SkillParentID == cp.SkillID) > 0)
+        {
+                @:<ul>
+        }
+
+            @RenderMenuItem(menuList, cp)
+        if (menuList.Count(p => p.SkillParentID == cp.SkillID) > 0)
+        {
+                @:</ul>
+        }
+        else
+        {
+                @:</li>
+        }
+    }
+}
+
+
