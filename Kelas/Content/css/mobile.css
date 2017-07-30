@@ -1,0 +1,53 @@
+@media only screen and (max-width: 1199px) {
+	.capt-header{
+		margin-left: 200px;
+	}
+	.inner-wamti{
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.logo {
+	    width: 140px;
+	    float: left;
+	    padding: 10px 0px;
+	}
+	.logo img {
+	    width: 85px;
+	    margin: 0 auto;
+	}
+	.capt-header{
+	    display: none;
+	}
+	.menu{
+		display: none;
+	}
+	.right-header {
+	    width: 100%;
+	    position: absolute;
+	    top: 0;
+	    left: auto;
+	    right: 0;
+	    padding-left: 140px;
+	}
+	.btn-right {
+	    float: right;
+	    text-align: center;
+	    width: 33.333%;
+	}
+	.right-header form{
+		clear: both;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width: 450px) {
+
+}

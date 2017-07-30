@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Panton-ExtraLight';
+  src: url('Panton-ExtraLight.eot?#iefix') format('embedded-opentype'),  url('Panton-ExtraLight.otf')  format('opentype'),
+	     url('Panton-ExtraLight.woff') format('woff'), url('Panton-ExtraLight.ttf')  format('truetype'), url('Panton-ExtraLight.svg#Panton-ExtraLight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

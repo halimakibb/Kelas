@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Klas.co.id</title>
+
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+
+</head>
+<body>
+	 <!-- Modal -->
+      <div class="modal fade modal-klas" id="ModalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="box-modal" style="background:url(images/bg-login.jpg) no-repeat center center;background-size: cover;border-radius:10px 0px 0px 10px;">
+                <div class="inner-modal">
+                  <div class="title-modal">Not a user yet?</div>
+                  <div class="btn-modal">
+                    <a href="#" class="btn btn-klas2 btn-block">
+                    	<span class="bg-blue">CREATE ACCOUNT</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="box-modal">
+                <div class="inner-modal">
+                  <div class="form-modal">
+                    <div class="title-form-modal green">LOG IN</div>
+                    <form>
+                      <div class="form-group">
+                        <input type="email" name="email" placeholder="Email" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" name="password" placeholder="Password" class="form-control">
+                      </div>
+                      <br />
+                      <div class="pull-left">
+                        <a href="#" class="forgot">Forgot password?</a>
+                      </div>
+                      <div class="pull-right">
+                        <button name="submit" type="submit" class="btn btn-klas3 bg-green">LOG IN</button>
+                      </div>
+                      <div class="clearfix"></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade modal-klas" id="ModalAnggota" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="box-modal">
+                <div class="inner-modal">
+                  <div class="form-modal">
+                    <div class="title-form-modal blue">SIGN UP</div>
+                    <form>
+                      <div class="form-group">
+                        <input type="email" name="email" placeholder="Email" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" name="password" placeholder="Password" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" name="co_password" placeholder="Confirm Password" class="form-control">
+                      </div>
+                      <p class="terms">By click on create account button, You agree <br />to the <a href="#">Terms & Condition</a></p>
+                      <br />
+                      <div class="pull-right">
+                        <button name="submit" type="submit" class="btn btn-klas3 bg-blue">CREATE ACCOUNT</button>
+                      </div>
+                      <div class="clearfix"></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="box-modal" style="background:url(images/bg-register.jpg) no-repeat center center;background-size: cover;border-radius:0px 10px 10px 0px;">
+                <div class="inner-modal">
+                  <div class="title-modal">Already a user?</div>
+                  <div class="btn-modal">
+                    <a href="#" class="btn btn-klas2 btn-block">
+                    	<span class="bg-green">LOGIN</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+	<div id="header" class="bg-grey">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="logo">
+						<img src="images/logo.png" class="img-responsive">
+					</div>
+				</div>
+				<div class="col-md-10">
+					<ul class="klas-breadcumbs">
+						<li><a href="#">Home</a></li>
+						<li>/</li>
+						<li>FEEDBACK</li>
+					</ul>
+					<ul class="main-menu">
+						<li><a href="#">PAYMENT INFORMATION</a></li>
+						<li><a href="#">ABOUT US</a></li>
+						<!-- <li>ARE YOU MEMBER ? <a href="#" data-toggle="modal" data-target="#ModalAnggota">REGISTER /</a> <a href="#" data-toggle="modal" data-target="#ModalLogin"> LOGIN</a></li> -->
+						<li><a href="#">Hi, Gilang</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell-o"></i> <span class="badge badge-notif">3</span></a>
+
+							<div class="box-notif dropdown-menu" aria-labelledby="dLabel">
+								tes
+							</div>
+						</li>
+						<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+		<a href="#" class="btn-logout"><img src="images/icon-out.png" ></a>
+	</div>
+
+	<div class="main-content">
+		<div class="row no-margin">
+			<div class="col-md-2 no-padding">
+				<div class="side-bar">
+					<div class="top-title">
+						BROWSE LESSONS
+					</div>
+					<div class="input-group search-group">
+					  <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-search"></i></span>
+					  <input type="text" class="form-control" placeholder="PILIH SKILL" aria-describedby="sizing-addon2">
+					</div>
+					<ul class="side-menu">
+						<li><a href="#">Language <i class="fa fa-caret-down"></i></a></li>
+						<li class="parent-menu">
+							<a href="#">Art <i class="fa fa-caret-down"></i></a>
+							<ul class="child">
+								<li><a href="#">Seni Musik</a></li>
+								<li><a href="#">Seni Lukis</a></li>
+								<li><a href="#">Mural</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Lorem Ipsum <i class="fa fa-caret-down"></i></a></li>
+						<li><a href="#">Lorem Ipsum <i class="fa fa-caret-down"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-10 no-padding">
+				<div class="title-bar">
+					<!-- <div class="page-title">
+						Order Payment
+					</div> -->
+					<ul class="list-title">
+						<li>Feedback Form</li>
+						<!-- <li><a href="#">Jadwal</a></li> -->
+					</ul>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="col-md-4 no-padding box-form-book feedback-form">
+				<form class="form-horizontal">
+					<div class="form-group no-margin">
+						<div class="col-md-6 no-padding">
+							<input type="text" class="form-control" placeholder="Nama" />
+						</div>
+						<div class="col-md-6 no-padding">
+							<input type="email" class="form-control" placeholder="Email" />
+						</div>
+					</div>
+					<div class="form-group no-margin">
+						<div class="col-md-12 no-padding">
+							<textarea class="form-control" rows="10" placeholder="Your Feedback"></textarea>
+						</div>
+					</div>
+					<div class="book-info-bottom">
+						<a href="#" class="btn btn-form btn-green btn-block">SUBMIT</a>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-6 no-padding box-feedback">
+				<div class="inner-feedback">
+					<h1>Thanks for your support!</h1>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					<ul>
+						<li>Share us</li>
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					</ul>
+				</div>
+				<a href="#" class="feedback-home">BACK TO HOME</a>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer-other">
+		<div class="inner-footer">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-10">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="footer-left">
+								<div class="footer-logo">
+									<img src="images/logo-white.png" alt="logo-white">
+								</div>
+								<div class="footer-address">
+									<span><b>Klas</b>.co.id</span>
+									<address>
+										Gedung Antam, Tower 2, lt. 19<br />
+										Jl. TB Simatupang, Kav 23 - 25<br />
+										Jakarta Selatan
+									</address>
+								</div>
+
+								<ul class="footer-menu">
+									<li><a href="#">Faq</a></li>
+									<li><a href="#">Terms & Condition</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="footer-right">
+								<h4>Call us, We're happy to help</h4>
+								<div class="footer-phone">
+									<div class="phone-icon">
+										<span><i class="fa fa-whatsapp"></i></span>
+										<span><i class="fa fa-phone"></i></span>
+									</div>
+									<div class="phone-content">
+										<span>+62 12 90 33 5004 </span>
+										<span>(10:00 - 17:00 WIB)</span>
+									</div>
+								</div>
+								<ul class="footer-socmed">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+									<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="copy">&copy; Klas.co.id All Rights Reserved</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+
+	<script type="text/javascript">
+		function SetHKlas()
+		{
+			var a = $(".abs-klas").height();
+			$(".inner-box-klas").height(a);
+
+		}
+
+		$(document).ready(function(){
+			SetHKlas();
+			$('.dropdown-toggle').dropdown();
+			$(window).resize(function(){
+				SetHKlas();
+			});
+		});
+	</script>
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".side-menu .parent-menu a").click(function(){
+				$(this).parent().find(".child").slideToggle();
+				$(this).toggleClass('active');
+				return false;
+			});
+		});
+	</script>
+</body>
+</html>
