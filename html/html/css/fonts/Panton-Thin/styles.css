@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Panton-Thin';
+  src: url('Panton-Thin.eot?#iefix') format('embedded-opentype'),  url('Panton-Thin.otf')  format('opentype'),
+	     url('Panton-Thin.woff') format('woff'), url('Panton-Thin.ttf')  format('truetype'), url('Panton-Thin.svg#Panton-Thin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

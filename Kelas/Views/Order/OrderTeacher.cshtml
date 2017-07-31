@@ -1,0 +1,361 @@
+﻿
+@{
+    ViewBag.Title = "Order Teacher";
+}
+
+<div class="main-content">
+    <div class="row no-margin">
+        <div class="col-md-2 no-padding">
+            <div class="side-bar">
+                <div class="top-title">
+                    BROWSE LESSONS
+                </div>
+                @*<div class="input-group search-group">
+                    <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-search"></i></span>
+                    <input type="text" class="form-control" placeholder="PILIH SKILL" aria-describedby="sizing-addon2">
+                </div>*@
+                <ul class="side-menu">
+                    @Html.Partial("~/Views/Order/_SkillsList.cshtml")
+                </ul>
+                <div class="book-info-bottom">
+                    <div class="top-title bg-dark">
+                        Input Your Booked Code Here :
+                    </div>
+                    <div class="input-group group-code">
+                        <input type="text" class="form-control" placeholder="Your code">
+                        <span class="input-group-btn">
+                            <button class="btn btn-green" type="button">Submit</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 no-padding">
+            <div class="title-bar">
+                <div class="top-title bg-blue-dark">
+                    Private
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 no-padding">
+            <div class="title-bar">
+                <div class="page-title">
+                    What would you like to learn today?
+                </div>
+                <ul class="list-skill-type">
+                    <li><a href="#"><i class="fa fa-th-large"></i></a></li>
+                    <li><a href="#" class="active"><i class="fa fa-th-list"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-10 no-padding box-main-skill">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="#" class="skill-list">
+                        <div class="skill-photo">
+                            <img src="~/Content/images/img1.jpg" class="img-responsive">
+                        </div>
+                        <div class="inner-skill-list">
+                            <h4>Salsa Nadila</h4>
+                            <ul class="list-profile">
+                                <li>
+                                    <img src="~/Content/images/icon-study.png" />
+                                    English
+                                </li>
+                                <li>
+                                    <img src="~/Content/images/icon-location.png" />
+                                    Jakarta Selatan
+                                </li>
+                            </ul>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                            </p>
+                        </div>
+                        <div class="list-verify">
+                            <div class="panton-extrabold green-light">Rate</div>
+                            <div class="panton-extrabold">IDR 132.455 / Session</div>
+                            <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                            </fieldset>
+                            <div class="clearfix"></div>
+                            <div class="box-verify">
+                                <span>
+                                    <img src="~/Content/images/icon-check.png" class="img-responsive" />
+                                </span>
+                                <div class="inner-verify">
+                                    VERIFIED
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="#" class="skill-list">
+                        <div class="skill-photo">
+                            <img src="~/Content/images/img2.jpg" class="img-responsive">
+                        </div>
+                        <div class="inner-skill-list">
+                            <h4>Rekti Yoewono</h4>
+                            <ul class="list-profile">
+                                <li>
+                                    <img src="~/Content/images/icon-study.png" />
+                                    English
+                                </li>
+                                <li>
+                                    <img src="~/Content/images/icon-location.png" />
+                                    Jakarta Selatan
+                                </li>
+                            </ul>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                            </p>
+                        </div>
+                        <div class="list-verify">
+                            <div class="panton-extrabold green-light">Rate</div>
+                            <div class="panton-extrabold">IDR 132.455 / Session</div>
+                            <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                            </fieldset>
+                            <div class="clearfix"></div>
+                            <div class="box-verify">
+                                <span>
+                                    <img src="~/Content/images/icon-check.png" class="img-responsive" />
+                                </span>
+                                <div class="inner-verify">
+                                    VERIFIED
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="#" class="skill-list">
+                        <div class="skill-photo">
+                            <img src="~/Content/images/img1.jpg" class="img-responsive">
+                        </div>
+                        <div class="inner-skill-list">
+                            <h4>Salsa Nadila</h4>
+                            <ul class="list-profile">
+                                <li>
+                                    <img src="~/Content/images/icon-study.png" />
+                                    English
+                                </li>
+                                <li>
+                                    <img src="~/Content/images/icon-location.png" />
+                                    Jakarta Selatan
+                                </li>
+                            </ul>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                            </p>
+                        </div>
+                        <div class="list-verify">
+                            <div class="panton-extrabold green-light">Rate</div>
+                            <div class="panton-extrabold">IDR 132.455 / Session</div>
+                            <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                            </fieldset>
+                            <div class="clearfix"></div>
+                            <div class="box-verify">
+                                <span>
+                                    <img src="~/Content/images/icon-check.png" class="img-responsive" />
+                                </span>
+                                <div class="inner-verify">
+                                    VERIFIED
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="#" class="skill-list">
+                        <div class="skill-photo">
+                            <img src="~/Content/images/img2.jpg" class="img-responsive">
+                        </div>
+                        <div class="inner-skill-list">
+                            <h4>Rekti Yoewono</h4>
+                            <ul class="list-profile">
+                                <li>
+                                    <img src="~/Content/images/icon-study.png" />
+                                    English
+                                </li>
+                                <li>
+                                    <img src="~/Content/images/icon-location.png" />
+                                    Jakarta Selatan
+                                </li>
+                            </ul>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                            </p>
+                        </div>
+                        <div class="list-verify">
+                            <div class="panton-extrabold green-light">Rate</div>
+                            <div class="panton-extrabold">IDR 132.455 / Session</div>
+                            <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                            </fieldset>
+                            <div class="clearfix"></div>
+                            <div class="box-verify">
+                                <span>
+                                    <img src="~/Content/images/icon-check.png" class="img-responsive" />
+                                </span>
+                                <div class="inner-verify">
+                                    VERIFIED
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="#" class="skill-list">
+                        <div class="skill-photo">
+                            <img src="~/Content/images/img1.jpg" class="img-responsive">
+                        </div>
+                        <div class="inner-skill-list">
+                            <h4>Salsa Nadila</h4>
+                            <ul class="list-profile">
+                                <li>
+                                    <img src="~/Content/images/icon-study.png" />
+                                    English
+                                </li>
+                                <li>
+                                    <img src="~/Content/images/icon-location.png" />
+                                    Jakarta Selatan
+                                </li>
+                            </ul>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                            </p>
+                        </div>
+                        <div class="list-verify">
+                            <div class="panton-extrabold green-light">Rate</div>
+                            <div class="panton-extrabold">IDR 132.455 / Session</div>
+                            <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                            </fieldset>
+                            <div class="clearfix"></div>
+                            <div class="box-verify">
+                                <span>
+                                    <img src="~/Content/images/icon-check.png" class="img-responsive" />
+                                </span>
+                                <div class="inner-verify">
+                                    VERIFIED
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="#" class="skill-list">
+                        <div class="skill-photo">
+                            <img src="~/Content/images/img2.jpg" class="img-responsive">
+                        </div>
+                        <div class="inner-skill-list">
+                            <h4>Rekti Yoewono</h4>
+                            <ul class="list-profile">
+                                <li>
+                                    <img src="~/Content/images/icon-study.png" />
+                                    English
+                                </li>
+                                <li>
+                                    <img src="~/Content/images/icon-location.png" />
+                                    Jakarta Selatan
+                                </li>
+                            </ul>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                            </p>
+                        </div>
+                        <div class="list-verify">
+                            <div class="panton-extrabold green-light">Rate</div>
+                            <div class="panton-extrabold">IDR 132.455 / Session</div>
+                            <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                            </fieldset>
+                            <div class="clearfix"></div>
+                            <div class="box-verify">
+                                <span>
+                                    <img src="~/Content/images/icon-check.png" class="img-responsive" />
+                                </span>
+                                <div class="inner-verify">
+                                    VERIFIED
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script type="text/javascript">
+		    $(document).ready(function(){
+			    $(".side-menu .parent-menu a").click(function(){
+				    $(this).parent().find(".child").slideToggle();
+				    $(this).toggleClass('active');
+				    return false;
+			    });
+		    });
+    </script>
+}
+
