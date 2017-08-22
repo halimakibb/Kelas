@@ -10,23 +10,37 @@ namespace Kelas.Controllers
 {
     public class OrderController : Controller
     {
-        // GET: Skill
+        SkillsBL skillsBL = new SkillsBL();
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult OrderTeacher()
+        private IList<Skills> SkillList(bool isParent, int skillId = 0)
         {
-            ViewBag.Menu = MenuList();
+           
+            List<Skills> skills = new List<Skills>();
+            skills = skillsBL.getSkills(isParent);
+            return skills;
+        }
+
+
+        [HttpGet]
+        public ActionResult OrderPrivate()
+        {
+            
+            ViewBag.SkillList = new SelectList(SkillList(true), "SkillID", "SkillName");
             return View();
         }
-        private IList<Skills> MenuList()
+        [HttpPost]
+        public ActionResult GetSkill(int skillId)
         {
-            SkillsBL skillsBL = new SkillsBL();
-            var list = skillsBL.getSkills();
-            return list;
+            List<Skills> skillsChild = new List<Skills>();
+            skillsChild = skillsBL.getSkills(false, skillId);
+            SelectList objSkillsChild = new SelectList(skillsChild, "SkillId", "SkillName");
+            return Json(objSkillsChild);
         }
+
 
     }
 }
