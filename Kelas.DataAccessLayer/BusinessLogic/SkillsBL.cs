@@ -11,11 +11,13 @@ namespace Kelas.DataAccessLayer.BusinessLogic
     public class SkillsBL
     {
       
-        public List<Skills> getSkills()
+        public List<Skills> getSkills(bool isParent, int skillParentID = 0)
         {
             List<Skills> skills = new List<Skills>();
 
-            skills = DbTransaction.DbToList<Skills>("stp_GetSkills", true);
+            skills = DbTransaction.DbToList<Skills>("stp_GetSkills", new { isParent= isParent,
+                                                                            skillParentID = skillParentID
+                                                                            }, true);
             return skills;
         }
     }
