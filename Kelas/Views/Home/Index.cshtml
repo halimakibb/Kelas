@@ -1,0 +1,45 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-offset-1 col-md-10">
+            <div class="section">
+                <div class="text-center home-title">
+                    <h1>Find your best <strong>teacher</strong></h1>
+                    <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit</i></p>
+                </div>
+
+                <div class="box-klas">
+
+                    <div class="inner-box-klas">
+                        <div class="abs-klas">
+                            <img src="~/Content/images/icon-private.png" alt="private">
+                            <h2>PRIVATE</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            @Html.ActionLink("Go To Private", "OrderPrivate",
+                                 new { controller = "Order" },
+                                 new { @class = "btn btn-klas" })<br />
+                            <a href="#" class="hyper-klas">What is Private?</a>
+                        </div>
+                        <div class="overlay-klas1"></div>
+                    </div>
+                    <div class="inner-box-klas" style="background: url('../../Content/images/bg-patungan.jpg') no-repeat center center;background-size:cover;">
+                        <div class="abs-klas">
+                            <img src="~/Content/images/icon-patungan.png" alt="patungan">
+                            <h2>PATUNGAN</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            @Html.ActionLink("Go To Patungan", "OrderPrivate",
+                                 new { controller = "Order" },
+                                 new { @class = "btn btn-klas" })<br />
+                            <a href="#" class="hyper-klas">What is Patungan?</a>
+                        </div>
+                        <div class="overlay-klas2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

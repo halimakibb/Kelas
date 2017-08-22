@@ -21,10 +21,12 @@ namespace Kelas
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                      "~/Scripts/respond.js",
+                      "~/Scripts/bootstrap-datetimepicker.min.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap/css/bootstrap.min.css",
+                      "~/Content/bootstrap/css/bootstrap-datetimepicker.min.css",
                       "~/Content/css/style.css",
                       "~/Content/css/mobile.css",
                       "~/Content/font-awesome/css/font-awesome.min.css"));
