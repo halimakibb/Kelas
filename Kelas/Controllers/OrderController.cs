@@ -20,7 +20,13 @@ namespace Kelas.Controllers
         {
            
             List<Skills> skills = new List<Skills>();
+            Skills defaultSkill = new Skills();
+            defaultSkill.SkillID = -1;
+            defaultSkill.SkillName = "Select Category";
+            
             skills = skillsBL.getSkills(isParent);
+            skills.Insert(0, defaultSkill);
+            
             return skills;
         }
 
@@ -29,7 +35,7 @@ namespace Kelas.Controllers
         public ActionResult OrderPrivate()
         {
             
-            ViewBag.SkillList = new SelectList(SkillList(true), "SkillID", "SkillName");
+            ViewBag.SkillList = new SelectList(SkillList(true), "SkillID", "SkillName", -1);
             return View();
         }
         [HttpPost]
