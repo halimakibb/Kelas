@@ -25,7 +25,7 @@ namespace Kelas
                       "~/Scripts/bootstrap-datetimepicker.min.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap/css/bootstrap.min.css",
+                      "~/Content/bootstrap/css/bootstrap.css",
                       "~/Content/bootstrap/css/bootstrap-datetimepicker.min.css",
                       "~/Content/css/style.css",
                       "~/Content/css/mobile.css",
